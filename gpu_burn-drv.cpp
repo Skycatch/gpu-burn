@@ -362,6 +362,7 @@ int pollTemp(pid_t *p) {
 }
 
 void updateTemps(int handle, std::vector<int> *temps) {
+    /*
 	const int readSize = 10240;
 	static int gpuIter = 0;
 	char data[readSize+1];
@@ -381,6 +382,7 @@ void updateTemps(int handle, std::vector<int> *temps) {
 		gpuIter = (gpuIter+1)%(temps->size());
 	} else if (!strcmp(data, "        Gpu                     : N/A"))
 		gpuIter = (gpuIter+1)%(temps->size()); // We rotate the iterator for N/A values as well
+     */
 }
 
 void listenClients(std::vector<int> clientFd, std::vector<pid_t> clientPid, int runTime) {
